@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para yasmin!!</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const envelope = document.querySelector('.envelope-wrapper');
+
+            envelope.addEventListener('click', () => {
+                envelope.classList.toggle('flap');
+                setTimeout(() => {
+                    window.location.href = 'outra_pagina.html'; // Substitua 'outra_pagina.html' pelo caminho da sua outra página
+                }, 1700); // Ajuste o valor conforme necessário
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper" id="envelopeWrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para Yasmin</strong>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+</body>
+</html>
