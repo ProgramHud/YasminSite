@@ -7,6 +7,8 @@
 body{
     overflow-x: hidden;
     overflow-y: hidden;
+    background-color: #fdfbde;
+    
 }
 
 .interface{
@@ -56,7 +58,17 @@ section{
 }
 
 .PAG4{
-    background-color: #0a121d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 130px;
+    animation: beat .25s infinite alternate;
+    transform-origin: center;
+}
+@keyframes beat{
+    to { transform: scale(1.4);}   
 }
 
 .rotated-image {
